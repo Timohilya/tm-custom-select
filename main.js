@@ -30,7 +30,7 @@ let CustomSelect = {
                     }
                 })
             });
-            element.options.querySelectorAll("button").forEach(link => {
+            element.options.querySelectorAll("a").forEach(link => {
                 link.addEventListener('click', e => {
                     element.button.querySelector("p").innerHTML = e.target.innerHTML;
                     element.options.classList.remove('show');

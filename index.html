@@ -4,47 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tm-custom-select</title>
+    <title>tm-select</title>
     <link rel="stylesheet" href="./main.css">
-    <script defer src="./main.js"></script>
+    <link rel="stylesheet" href="./select.css">
+    <script defer src="./select.js"></script>
 </head>
 <body>
-    <div class="tm-custom-select">
-        <div class="tm-custom-select__selected" tabindex="0" onkeypress="if(event.keyCode===32||event.keyCode===13){this.click()};">
-            <p>
-                УКР
-            </p>
-            <div class="tm-custom-select__arrow"></div>
-        </div>
-        <div class="tm-custom-select__options">
-            <button>
-                Пункт 1
-            </button>
-            <button>
-                Пункт 2
-            </button>
-            <button>
-                Пункт 3
-            </button>
+    <h1>Timohilya custom select</h1>
+    <h3>Select default</h3>
+    <div class="item">
+        <div data-select-item class="tm-select">
+            <div data-select-button class="tm-select__selected" tabindex="0" onkeypress="if(event.keyCode===32||event.keyCode===13){this.click()};">
+                <p>
+                    УКР
+                </p>
+                <div class="tm-select__arrow"></div>
+            </div>
+            <div data-select-options class="tm-select__options">
+                <a>
+                    Пункт 1
+                </a>
+                <a>
+                    Пункт 2
+                </a>
+                <a>
+                    Пункт 3
+                </a>
+            </div>
         </div>
     </div>
-    <div class="tm-custom-select">
-        <div class="tm-custom-select__selected" tabindex="0" onkeypress="if(event.keyCode===32||event.keyCode===13){this.click()};">
-            <p>
-                УКР
-            </p>
-            <div class="tm-custom-select__arrow"></div>
+    <h3>Select with hidden input</h3>
+    <div class="item">
+        <div data-select-item class="tm-select">
+            <input data-select-input type="hidden">
+            <div data-select-button class="tm-select__selected" tabindex="0" onkeypress="if(event.keyCode===32||event.keyCode===13){this.click()};">
+                <p>
+                    УКР
+                </p>
+                <div class="tm-select__arrow"></div>
+            </div>
+            <div data-select-options class="tm-select__options">
+                <a>
+                    Пункт 1
+                </a>
+                <a>
+                    Пункт 2
+                </a>
+                <a>
+                    Пункт 3
+                </a>
+            </div>
         </div>
-        <div class="tm-custom-select__options">
-            <button>
-                Пункт 1
-            </button>
-            <button>
-                Пункт 2
-            </button>
-            <button>
-                Пункт 3
-            </button>
+    </div>
+    <h3>Select with label</h3>
+    <div class="item">
+        <label for="label1">Select with label</label>
+        <div data-select-item class="tm-select">
+            <div data-select-button data-select-label="label1" class="tm-select__selected" tabindex="0" onkeypress="if(event.keyCode===32||event.keyCode===13){this.click()};">
+                <p>
+                    УКР
+                </p>
+                <div class="tm-select__arrow"></div>
+            </div>
+            <div data-select-options class="tm-select__options">
+                <a>
+                    Пункт 1
+                </a>
+                <a>
+                    Пункт 2
+                </a>
+                <a>
+                    Пункт 3
+                </a>
+            </div>
+        </div>
+    </div>
+    <h3>Select with input & label</h3>
+    <div class="item">
+        <label for="label2">Select with hidden input and label</label>
+        <div data-select-item class="tm-select">
+            <input data-select-input type="hidden">
+            <div data-select-button data-select-label="label2" class="tm-select__selected" tabindex="0" onkeypress="if(event.keyCode===32||event.keyCode===13){this.click()};">
+                <p>
+                    УКР
+                </p>
+                <div class="tm-select__arrow"></div>
+            </div>
+            <div data-select-options class="tm-select__options">
+                <a>
+                    Пункт 1
+                </a>
+                <a>
+                    Пункт 2
+                </a>
+                <a>
+                    Пункт 3
+                </a>
+            </div>
         </div>
     </div>
 </body>

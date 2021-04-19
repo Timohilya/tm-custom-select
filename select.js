@@ -14,7 +14,6 @@ let select = {
                 this.items.push(obj);
             });
         }
-        console.log(this.items);
         this.selectInit();
     },
     hasInput: function(obj) {
